@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-15T01:40:04.511Z",
+  "prepared_at": "2026-10-15T02:51:15.255Z",
   "tasks": [
     {
       "id": "CA1.1",
@@ -317,9 +317,9 @@
       "contractor": "Josué · General",
       "furniture": "Sin mueble",
       "notes": "Se debe aplicar pasta en huecos que quedaron al cambiar el zoclo de madera.",
-      "status": "pending",
+      "status": "done",
       "historical": false,
-      "version": 1
+      "version": 2
     },
     {
       "id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
@@ -328,9 +328,9 @@
       "contractor": "Josué · General",
       "furniture": "Sin mueble",
       "notes": "Aplicar pasta y darle la forma de la moldura a mano. ",
-      "status": "pending",
+      "status": "done",
       "historical": false,
-      "version": 1
+      "version": 2
     },
     {
       "id": "3db838b8-7f0d-4525-b229-035f2c85c201",
@@ -350,9 +350,9 @@
       "contractor": "Josué · General",
       "furniture": "Sin mueble",
       "notes": "Se debe aplicar pasta en donde se retiraron los zoclos de marmol.",
-      "status": "pending",
+      "status": "done",
       "historical": false,
-      "version": 1
+      "version": 2
     },
     {
       "id": "5ae59f49-b851-4686-b957-9c585b79b78b",
@@ -400,6 +400,90 @@
     }
   ],
   "events": [
+    {
+      "id": "7aec8692-ee08-46b4-83bb-12a79a722c66",
+      "task_id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+      "created_at": "2026-10-15T02:24:38.604Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+        "code": "GE-01",
+        "title": "Resane de detalles en zoclo de madera",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en huecos que quedaron al cambiar el zoclo de madera.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+        "code": "GE-01",
+        "title": "Resane de detalles en zoclo de madera",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en huecos que quedaron al cambiar el zoclo de madera.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "5d7fad8a-a276-493d-93fa-eb0f9ea75397",
+      "task_id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+      "created_at": "2026-10-15T02:05:01.672Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+        "code": "GE-04",
+        "title": "Pasta en zoclos de columnas",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en donde se retiraron los zoclos de marmol.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+        "code": "GE-04",
+        "title": "Pasta en zoclos de columnas",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en donde se retiraron los zoclos de marmol.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "06b176ce-f516-4db6-b735-b70b656cc660",
+      "task_id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+      "created_at": "2026-10-15T02:04:57.886Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+        "code": "GE-02",
+        "title": "Extender pecho paloma en muro de la entrada. ",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Aplicar pasta y darle la forma de la moldura a mano. ",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+        "code": "GE-02",
+        "title": "Extender pecho paloma en muro de la entrada. ",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Aplicar pasta y darle la forma de la moldura a mano. ",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
     {
       "id": "006d347b-df1c-46a9-adce-28559062f012",
       "task_id": "CA14",
