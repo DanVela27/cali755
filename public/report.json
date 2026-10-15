@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prepared_at": null,
+  "prepared_at": "2026-10-15T01:40:04.511Z",
   "tasks": [
     {
       "id": "CA1.1",
@@ -8,9 +8,9 @@
       "title": "Reenchapado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-04",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -19,9 +19,9 @@
       "title": "Reenchapado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -30,9 +30,9 @@
       "title": "Saque para contacto en pieza trasera",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-04",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -41,9 +41,9 @@
       "title": "Corte y colocación de cubierta",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -52,9 +52,9 @@
       "title": "Fijación del mueble al muro",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -63,9 +63,9 @@
       "title": "Ajuste de puertas",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-01",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -74,9 +74,9 @@
       "title": "Ajuste de puertas",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-02",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -85,9 +85,9 @@
       "title": "Ajuste de cajones",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-02",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "done",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -96,10 +96,10 @@
       "title": "Corte y colocación de cubierta",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-04",
-      "status": "pending",
-      "historical": false,
       "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
-      "version": 1
+      "status": "done",
+      "historical": false,
+      "version": 2
     },
     {
       "id": "CA5",
@@ -107,10 +107,10 @@
       "title": "Trazo con láser para corte de piso laminado",
       "contractor": "Gabriel · Carpintería",
       "furniture": "Sin mueble",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
-      "version": 1
+      "version": 3
     },
     {
       "id": "CA6",
@@ -118,9 +118,9 @@
       "title": "Corte de piso laminado con disco",
       "contractor": "Gabriel · Carpintería",
       "furniture": "Sin mueble",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -129,9 +129,9 @@
       "title": "Colocación de piso laminado en escalón",
       "contractor": "Gabriel · Carpintería",
       "furniture": "Sin mueble",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -140,9 +140,9 @@
       "title": "Ajuste de puertas",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-03",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -151,9 +151,9 @@
       "title": "Ajuste de cajones",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-03",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -162,9 +162,9 @@
       "title": "Lijado y empastado",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-01",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -173,9 +173,9 @@
       "title": "Lijado y empastado",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-02",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -184,9 +184,9 @@
       "title": "Lijado y empastado",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-03",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -195,9 +195,9 @@
       "title": "Barnizado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-04",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -206,9 +206,9 @@
       "title": "Barnizado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -217,9 +217,9 @@
       "title": "Laqueado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-01",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -228,9 +228,9 @@
       "title": "Laqueado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-02",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -239,9 +239,9 @@
       "title": "Laqueado del mueble",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-03",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -250,10 +250,10 @@
       "title": "Enchapado de hoja",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
-      "status": "pending",
-      "historical": false,
       "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
-      "version": 1
+      "status": "done",
+      "historical": false,
+      "version": 2
     },
     {
       "id": "CA15",
@@ -261,9 +261,9 @@
       "title": "Barnizado de hoja",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -272,9 +272,9 @@
       "title": "Enchapado de repisas",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -283,9 +283,9 @@
       "title": "Colocación de repisas",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -294,9 +294,9 @@
       "title": "Colocación de tubos",
       "contractor": "Gabriel · Carpintería",
       "furniture": "M-05",
+      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "status": "pending",
       "historical": false,
-      "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
       "version": 1
     },
     {
@@ -305,11 +305,502 @@
       "title": "Actividad completada (descripción por confirmar)",
       "contractor": "Gabriel · Carpintería",
       "furniture": "Sin mueble",
+      "notes": "Completada el 13/10/2026. Fuera del conteo de 27 actividades.",
       "status": "done",
       "historical": true,
-      "notes": "Completada el 13/10/2026. Fuera del conteo de 27 actividades.",
+      "version": 1
+    },
+    {
+      "id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+      "code": "GE-01",
+      "title": "Resane de detalles en zoclo de madera",
+      "contractor": "Josué · General",
+      "furniture": "Sin mueble",
+      "notes": "Se debe aplicar pasta en huecos que quedaron al cambiar el zoclo de madera.",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+      "code": "GE-02",
+      "title": "Extender pecho paloma en muro de la entrada. ",
+      "contractor": "Josué · General",
+      "furniture": "Sin mueble",
+      "notes": "Aplicar pasta y darle la forma de la moldura a mano. ",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "3db838b8-7f0d-4525-b229-035f2c85c201",
+      "code": "GE-03",
+      "title": "Pintura de detalles",
+      "contractor": "Josué · General",
+      "furniture": "Sin mueble",
+      "notes": "Lijar y pintar detalles.",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+      "code": "GE-04",
+      "title": "Pasta en zoclos de columnas",
+      "contractor": "Josué · General",
+      "furniture": "Sin mueble",
+      "notes": "Se debe aplicar pasta en donde se retiraron los zoclos de marmol.",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "5ae59f49-b851-4686-b957-9c585b79b78b",
+      "code": "GE-05",
+      "title": "Pintura de zoclos en columnas",
+      "contractor": "Josué · General",
+      "furniture": "Sin mueble",
+      "notes": "Una vez seca la pasta de los zoclos, se debe lijar y pintar. ",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+      "code": "LG-01",
+      "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+      "contractor": "Limpieza",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "110a4de3-e2b0-44b3-bf9f-7a7cc8334197",
+      "code": "EL-01",
+      "title": "Retiro de perfiles para tira led",
+      "contractor": "Electricista",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "e2e01db2-36a9-4845-b3e7-85baabd8ad72",
+      "code": "EL-02",
+      "title": "Instalación de perfiles para tira LED",
+      "contractor": "Electricista",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
       "version": 1
     }
   ],
-  "events": []
+  "events": [
+    {
+      "id": "006d347b-df1c-46a9-adce-28559062f012",
+      "task_id": "CA14",
+      "created_at": "2026-10-15T01:09:18.940Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "CA14",
+        "code": "CA14",
+        "title": "Enchapado de hoja",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "M-05",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "CA14",
+        "code": "CA14",
+        "title": "Enchapado de hoja",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "M-05",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "faebfd5f-acad-4473-824c-080b7d90a061",
+      "task_id": "CA4.1",
+      "created_at": "2026-10-15T01:08:54.449Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "CA4.1",
+        "code": "CA4.1",
+        "title": "Corte y colocación de cubierta",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "M-04",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "CA4.1",
+        "code": "CA4.1",
+        "title": "Corte y colocación de cubierta",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "M-04",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "332f10b2-7e32-4a03-9921-b0869024b76c",
+      "task_id": "CA5",
+      "created_at": "2026-10-15T01:08:53.827Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "CA5",
+        "code": "CA5",
+        "title": "Trazo con láser para corte de piso laminado",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "Sin mueble",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      },
+      "after_data": {
+        "id": "CA5",
+        "code": "CA5",
+        "title": "Trazo con láser para corte de piso laminado",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "Sin mueble",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "pending",
+        "historical": false,
+        "version": 3
+      }
+    },
+    {
+      "id": "8ab242c5-5927-459a-a1e5-150fa08aac2c",
+      "task_id": "CA5",
+      "created_at": "2026-10-15T01:08:53.189Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "CA5",
+        "code": "CA5",
+        "title": "Trazo con láser para corte de piso laminado",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "Sin mueble",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "CA5",
+        "code": "CA5",
+        "title": "Trazo con láser para corte de piso laminado",
+        "contractor": "Gabriel · Carpintería",
+        "furniture": "Sin mueble",
+        "notes": "Fuente: Control de Actividades · corte 14/10/2026. Fecha individual de ejecución no confirmada.",
+        "status": "done",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "62a92043-d82e-4fae-bf08-3dff5452d327",
+      "task_id": "e2e01db2-36a9-4845-b3e7-85baabd8ad72",
+      "created_at": "2026-10-15T00:53:55.712Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "e2e01db2-36a9-4845-b3e7-85baabd8ad72",
+        "code": "EL-02",
+        "title": "Instalación de perfiles para tira LED",
+        "contractor": "Electricista",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "aa7e3249-caa0-4cef-ac0a-92432d575bac",
+      "task_id": "110a4de3-e2b0-44b3-bf9f-7a7cc8334197",
+      "created_at": "2026-10-15T00:53:26.240Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "110a4de3-e2b0-44b3-bf9f-7a7cc8334197",
+        "code": "EL-01",
+        "title": "Retiro de perfiles para tira led",
+        "contractor": "Electricista",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "44703159-d9ce-496e-afb0-70ca4ee8ffb4",
+      "task_id": "201747df-d4b6-4cde-b17f-741ffb056315",
+      "created_at": "2026-10-15T00:52:16.494Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+        "code": "LG-01",
+        "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "25399946-9f90-4100-a36a-f547b9b3f200",
+      "task_id": "5ae59f49-b851-4686-b957-9c585b79b78b",
+      "created_at": "2026-10-15T00:48:56.666Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "5ae59f49-b851-4686-b957-9c585b79b78b",
+        "code": "GE-05",
+        "title": "Pintura de zoclos en columnas",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Una vez seca la pasta de los zoclos, se debe lijar y pintar. ",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "cb97ea73-3934-4b36-9fb7-8c0c89ddd23f",
+      "task_id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+      "created_at": "2026-10-15T00:48:06.851Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf",
+        "code": "GE-04",
+        "title": "Pasta en zoclos de columnas",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en donde se retiraron los zoclos de marmol.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "2431c815-15b2-4926-945f-91d0d6d59677",
+      "task_id": "3db838b8-7f0d-4525-b229-035f2c85c201",
+      "created_at": "2026-10-15T00:46:31.163Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "3db838b8-7f0d-4525-b229-035f2c85c201",
+        "code": "GE-03",
+        "title": "Pintura de detalles",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Lijar y pintar detalles.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "afa98515-3852-40c5-b55f-e7cc5b76ea6e",
+      "task_id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+      "created_at": "2026-10-15T00:45:47.112Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "7e1861d8-6287-4a48-8d58-7a202e8362bc",
+        "code": "GE-02",
+        "title": "Extender pecho paloma en muro de la entrada. ",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Aplicar pasta y darle la forma de la moldura a mano. ",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "a03bffad-1bb7-4c4d-afef-3816b1a7dca6",
+      "task_id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+      "created_at": "2026-10-15T00:44:37.704Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "774bf731-c1dc-4305-8a22-3e06b30af088",
+        "code": "GE-01",
+        "title": "Resane de detalles en zoclo de madera",
+        "contractor": "Josué · General",
+        "furniture": "Sin mueble",
+        "notes": "Se debe aplicar pasta en huecos que quedaron al cambiar el zoclo de madera.",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    }
+  ],
+  "reserved_codes": [
+    {
+      "code": "CA1.1",
+      "task_id": "CA1.1"
+    },
+    {
+      "code": "CA1.2",
+      "task_id": "CA1.2"
+    },
+    {
+      "code": "CA3",
+      "task_id": "CA3"
+    },
+    {
+      "code": "CA4.2",
+      "task_id": "CA4.2"
+    },
+    {
+      "code": "CA7",
+      "task_id": "CA7"
+    },
+    {
+      "code": "CA9.1",
+      "task_id": "CA9.1"
+    },
+    {
+      "code": "CA9.2",
+      "task_id": "CA9.2"
+    },
+    {
+      "code": "CA10.1",
+      "task_id": "CA10.1"
+    },
+    {
+      "code": "CA4.1",
+      "task_id": "CA4.1"
+    },
+    {
+      "code": "CA5",
+      "task_id": "CA5"
+    },
+    {
+      "code": "CA6",
+      "task_id": "CA6"
+    },
+    {
+      "code": "CA8",
+      "task_id": "CA8"
+    },
+    {
+      "code": "CA9.3",
+      "task_id": "CA9.3"
+    },
+    {
+      "code": "CA10.2",
+      "task_id": "CA10.2"
+    },
+    {
+      "code": "CA11.1",
+      "task_id": "CA11.1"
+    },
+    {
+      "code": "CA11.2",
+      "task_id": "CA11.2"
+    },
+    {
+      "code": "CA11.3",
+      "task_id": "CA11.3"
+    },
+    {
+      "code": "CA12.1",
+      "task_id": "CA12.1"
+    },
+    {
+      "code": "CA12.2",
+      "task_id": "CA12.2"
+    },
+    {
+      "code": "CA13.1",
+      "task_id": "CA13.1"
+    },
+    {
+      "code": "CA13.2",
+      "task_id": "CA13.2"
+    },
+    {
+      "code": "CA13.3",
+      "task_id": "CA13.3"
+    },
+    {
+      "code": "CA14",
+      "task_id": "CA14"
+    },
+    {
+      "code": "CA15",
+      "task_id": "CA15"
+    },
+    {
+      "code": "CA16",
+      "task_id": "CA16"
+    },
+    {
+      "code": "CA17",
+      "task_id": "CA17"
+    },
+    {
+      "code": "CA18",
+      "task_id": "CA18"
+    },
+    {
+      "code": "CA2",
+      "task_id": "CA2"
+    },
+    {
+      "code": "GE-01",
+      "task_id": "774bf731-c1dc-4305-8a22-3e06b30af088"
+    },
+    {
+      "code": "GE-02",
+      "task_id": "7e1861d8-6287-4a48-8d58-7a202e8362bc"
+    },
+    {
+      "code": "GE-03",
+      "task_id": "3db838b8-7f0d-4525-b229-035f2c85c201"
+    },
+    {
+      "code": "GE-04",
+      "task_id": "4ed4a00f-be6b-4365-8d91-9e56607edfaf"
+    },
+    {
+      "code": "GE-05",
+      "task_id": "5ae59f49-b851-4686-b957-9c585b79b78b"
+    },
+    {
+      "code": "LG-01",
+      "task_id": "201747df-d4b6-4cde-b17f-741ffb056315"
+    },
+    {
+      "code": "EL-01",
+      "task_id": "110a4de3-e2b0-44b3-bf9f-7a7cc8334197"
+    },
+    {
+      "code": "EL-02",
+      "task_id": "e2e01db2-36a9-4845-b3e7-85baabd8ad72"
+    }
+  ]
 }
