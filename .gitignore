@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo
+
+public/report.tmp
+cali755-respaldo*.json
+cali755-antes-de-restaurar*.json
+
