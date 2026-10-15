@@ -1,20 +1,31 @@
 # CALI 755 · Editor local y consulta pública
 
-MVP React + TypeScript + Vite. Una persona documenta; equipo y clientes consultan cortes publicados en GitHub Pages. No usa Supabase, cuentas de clientes ni base de datos. Sitio publicado: [CALI 755](https://danvela27.github.io/cali755/).
+Sitio: [CALI 755](https://danvela27.github.io/cali755/). Una persona documenta en su computadora; equipo y clientes consultan el último corte publicado. React + TypeScript + Vite, sin Supabase ni cuentas de clientes.
 
-## Uso diario
+## Publicar con un botón
 
-1. Inicia el editor con `pnpm dev` y abre http://127.0.0.1:5173/. En esta computadora también puedes ejecutar `iniciar-editor.ps1` desde PowerShell.
-2. Completa/reabre tareas, añade actividades y edita notas en Actividades. El borrador queda en ese navegador; no cambia la información compartida.
-3. En **Publicar avances**, pulsa **Preparar corte para publicar**. Guarda el estado y todo el historial en `public/report.json`, con hora del corte. Revisa **Abrir vista de consulta**.
-4. Sube `public/report.json` al repositorio GitHub (ver abajo). Cuando el workflow termine correctamente, el enlace del sitio mostrará el nuevo corte. Preparar un corte local NO significa que se publicó en internet.
-5. Exporta respaldos regularmente. La sección Publicación permite importar respaldos; valida el archivo y pide confirmar el reemplazo del borrador, descargando antes una copia del estado actual.
+1. Abre el editor local en http://127.0.0.1:5173/ con `iniciar-editor.ps1` o `pnpm dev`.
+2. Actualiza actividades, estados y notas.
+3. Pulsa **Publicar avances**. El editor guarda `public/report.json`, crea un commit que incluye solo ese archivo, lo sube a `main` y espera la confirmación de GitHub Pages.
+4. Mantén el editor abierto hasta ver **Avances publicados correctamente**. El enlace público conserva el corte anterior mientras termina el despliegue. No hay descarga ni carga manual del JSON.
 
-La vista pública no ofrece edición: producción siempre es solo lectura, aunque se añadan parámetros a la URL. Solo el servidor de desarrollo local tiene el editor y el endpoint para preparar archivos. Modificar una página en herramientas del navegador no modifica GitHub ni los datos compartidos. El permiso para publicar depende del acceso a tu repositorio GitHub.
+La primera vez se necesita conectar Git a GitHub: ejecuta `conectar-github.ps1` y completa la autorización en el navegador. Git Credential Manager guarda las credenciales con el mecanismo de tu sistema; nunca se colocan en React, localStorage, archivos públicos ni variables VITE_. Su autorización estándar puede incluir acceso a repositorios privados, gists y workflows; revisa los permisos que GitHub muestra antes de aceptar. El servidor solo admite publicar a DanVela27/cali755 en main.
 
-## Instalación
+Si Git no está disponible, instala Git para Windows con Credential Manager. Puedes indicar un ejecutable mediante CALI_GIT_PATH (variable del proceso local). La conexión de GitHub es independiente de tener sesión abierta en Chrome. Si no hay conexión autorizada, no se informa una publicación exitosa.
 
-Node 22.18+ y pnpm 11.25.0:
+## Qué hace la publicación
+
+El endpoint local POST `/__cali/publish` valida el corte, consulta origin/main y exige una actualización fast-forward. Si hay commits de código locales pendientes no los publica. Guarda el reporte y usa `git commit --only -- public/report.json`, respetando otros archivos que tengas preparados. El push es normal, nunca forzado. Si otra persona modifica main durante la operación, Git rechaza la subida y el editor muestra el fallo.
+
+Después consulta GitHub Actions por el SHA del commit y verifica que el JSON público corresponda al corte enviado. Solo entonces muestra éxito. Un fallo de red, falta de credenciales, protección de rama o despliegue fallido se informa explícitamente. Si la subida ya ocurrió y la comprobación falla, el mensaje distingue ese estado; revisa Actions antes de reintentar para evitar versiones innecesarias.
+
+GET `/__cali/status` permite recuperar el progreso después de recargar la página mientras el servidor siga activo. Reiniciar el servidor pierde ese estado de seguimiento, pero conserva los commits, archivos y borradores; consulta Actions si se interrumpió una publicación. El editor evita repetir la aplicación del resultado y no reemplaza borradores que se hayan modificado después.
+
+Los endpoints solo existen en el servidor de desarrollo local; exigen host local, origen permitido y solicitudes JSON. Se rechazan solicitudes desde sitios externos y solo se permite una publicación a la vez. No expongas el editor local a internet. El build de Pages es siempre de solo lectura y no contiene el publicador de servidor.
+
+## Instalar y ejecutar
+
+Node 22.18+, pnpm 11.25.0 y Git:
 
 ```sh
 pnpm install --frozen-lockfile --ignore-scripts
@@ -23,65 +34,35 @@ pnpm build
 pnpm dev
 ```
 
-`pnpm preview` en el puerto 4173 muestra el sitio compilado de solo lectura. Para editar usa `pnpm dev` en el 5173. No publicar el servidor de desarrollo ni exponerlo a internet.
+En esta computadora `iniciar-editor.ps1` también detecta el runtime de Codex. Usa certificados del sistema mediante NODE_USE_SYSTEM_CA=1 para consultar GitHub; si inicias a mano y tu red usa certificados corporativos, aplica esa variable al proceso Node. No desactives la validación TLS.
 
-## Primera publicación en GitHub Pages
+`pnpm preview` en 4173 muestra la versión compilada de consulta. Para editar usa el puerto 5173. La vista pública no permite cambiar los datos compartidos; el permiso para publicar lo controla GitHub.
 
-1. Crea un repositorio GitHub y sube **el contenido de dashboard a su raíz**, incluyendo como`.github/workflows/pages.yml`, `public/` y `pnpm-lock.yaml`. No subas `node_modules`, respaldos personales ni `.env`.
-2. Settings → Pages → Source: **GitHub Actions**. No hacen falta variables, tokens dentro de la aplicación ni Supabase.
-3. Haz push a `main` o ejecuta el workflow manual. Valida datos, corre pruebas, compila y despliega `dist/`.
-4. GitHub proporciona la URL de Pages. Compártela con equipo y clientes.
+## Datos, códigos e historial
 
-Para actualizaciones posteriores, después de preparar el corte:
+Fuente inicial: conversación Control de Actividades, corte 14/10/2026: **27 actividades, 8 realizadas y 19 pendientes**. CA17 y CA18 incluidas. CA2 completada el 13/10/2026 queda fuera del denominador. Su descripción y mueble no están confirmados. Frentes: Gabriel/carpintería, Josué/general, electricista, pendientes generales, limpieza y herrero. No se inventan tareas de otros frentes.
 
-```sh
-git add public/report.json
-git commit -m "Actualiza avance CALI 755"
-git push origin main
-```
+Navegación: resumen, checklist filtrable, muebles, historial y publicación (solo editor). El 30% inicial es 8/27 redondeado, no avance físico ponderado de toda la obra. Por mueble, realizadas/total: M-01 1/3, M-02 2/4, M-03 0/4, M-04 2/4, M-05 3/9 y piso/Sin mueble 0/3.
 
-Alternativa sin terminal: descarga `report.json` desde Publicación; en GitHub abre la carpeta `public`, usa Add file → Upload files y reemplaza el archivo. Confirma el cambio en `main`. Si la rama requiere revisión, crea el cambio en otra rama y fusiónalo según las reglas del repositorio. Espera a que Actions termine y actualiza la página compartida.
+Prefijos automáticos: CA carpintería, GE Josué/general, EL electricidad, PG pendientes generales, LI limpieza y HE herrería. Se asigna el mayor número reservado más uno; se conservan subcódigos existentes. Cambiar el frente de una actividad existente conserva su código. Las validaciones comparan mayúsculas y omiten espacios de extremos. CA2, códigos de snapshots históricos y reserved_codes permanecen reservados. Restaurar un respaldo anterior en el mismo editor conserva las reservas actuales. Importa el respaldo más reciente al cambiar de computadora.
 
-El workflow supone que dashboard es la raíz del repositorio. Para un monorepo hay que adaptar los directorios de ejecución y el path del artefacto. `base: './'` admite Pages bajo `/repositorio/`.
+`public/report.json` contiene schema_version, prepared_at, tasks, events y reserved_codes. prepared_at es la fecha del corte; el resultado del workflow confirma cuándo quedó publicado. El corte inicial no inventa una hora de publicación. Cambios almacenados en UTC y mostrados en Ciudad de México. Git conserva los cortes por commit; el historial local es trazabilidad operativa editable por su propietario, no auditoría inviolable.
 
-**El enlace será público**, y los archivos JSON, notas e historial también. El editor no añade contraseñas ni promete privacidad. La publicación de un corte comparte TODO su contenido. El historial local se puede modificar por el propietario; es trazabilidad operativa, no una auditoría inviolable.
+## Respaldos
 
-## Datos y navegación
+Las ediciones permanecen en el navegador (cali755-editor-v1, con migración de la demo anterior). Exportar respaldo es opcional y recomendable antes de borrar datos del navegador o cambiar de computadora. Importar valida el archivo, confirma su reemplazo y descarga antes una copia del borrador. Trabaja en una sola pestaña; el editor detecta cambios de otra pestaña antes de guardar.
 
-- Resumen: avance de las actividades registradas y frentes.
-- Actividades: búsqueda, filtros de frente/estado/mueble, checklist y detalles.
-- Muebles: conteos y porcentaje de carpintería por M-01 a M-05 y piso (Sin mueble).
-- Historial: corte inicial y cambios antes/después.
-- Publicación: solo en el editor, con preparación de corte, vista de consulta y respaldos.
+## GitHub Pages
 
-La fuente inicial es la conversación Control de Actividades, corte 14/10/2026: **27 tareas vigentes, 8 realizadas y 19 pendientes**. CA17 y CA18 incluidas. CA2 completada el 13/10/2026 está fuera del denominador, sin inventar descripción o mueble. Los otros frentes (Josué, electricista, pendientes generales, limpieza) están disponibles sin actividades inventadas. El 30% es 8/27 redondeado; no es avance físico ponderado de toda la obra.
+El código se aloja en la raíz del repositorio; `.github/workflows/pages.yml` prueba, compila y despliega dist al cambiar main. Settings → Pages → Source: GitHub Actions. No hay tokens ni secretos que configurar en Actions. El sitio, JSON, notas e historial son públicos.
 
-| Mueble | Realizadas | Total |
-|---|---:|---:|
-| M-01 | 1 | 3 |
-| M-02 | 2 | 4 |
-| M-03 | 0 | 4 |
-| M-04 | 2 | 4 |
-| M-05 | 3 | 9 |
-| Sin mueble | 0 | 3 |
-
-`public/report.json` contiene `schema_version`, `prepared_at`, `tasks` y `events`. `prepared_at` es la hora de preparación del corte, no una confirmación de despliegue; el workflow de GitHub confirma la publicación. La semilla inicial tiene fecha de reporte 14/10/2026 y no inventa una hora de publicación. Fechas de cambios en UTC; visualización en Ciudad de México.
-
-Los borradores usan localStorage (`cali755-editor-v1`) y migran la demo anterior (`cali755-demo-v1`) si existe. La consulta pública ignora ambos. Borrar datos del navegador elimina borradores no respaldados. Abrir desde otra dirección/puerto o navegador usa otro almacenamiento: importa un respaldo para continuar. La edición simultánea en varias pestañas no está soportada; trabaja en una sola para evitar sobrescribir borradores. Git conserva cortes anteriores después de cada commit.
+La publicación automática supone una rama main con permiso de escritura directa para tu usuario. Si se agregan reglas de revisión, hay que adaptar el flujo a PRs; no se eluden esas reglas.
 
 ## Verificación
 
-`pnpm test`: conteos iniciales, CA2, muebles, transiciones de estado, formato del corte, compatibilidad de respaldos anteriores y rechazo de datos inválidos. El build valida `report.json` antes de compilar. El lector y el endpoint local validan los datos; un corte ilegible da un error y no se sustituye por una demo.
+Pruebas de conteos, muebles, CA2, transiciones, normalización y reserva de códigos, importación de respaldos, commit limitado al reporte, rechazo de commits de código pendientes y fallo de push sin falso éxito. TypeScript y build de producción verificados. Las pruebas del publicador usan Git simulado; una publicación real necesita la conexión autorizada del usuario y se verifica por separado.
 
-El script opcional `scripts/browser-check.cjs` requiere Playwright y Edge. Con `pnpm dev` en 5173 y `pnpm preview` en 4173 verifica persistencia, aislamiento del borrador, preparación de publicación, consulta de producción, importación/restauración y móvil. `CALI_PLAYWRIGHT_MODULE` permite usar una instalación externa de Playwright. Guarda/restaura el archivo de corte durante la prueba. No hace push ni despliega.
+`scripts/browser-check.cjs` es una comprobación opcional de interfaz (requiere Playwright/Edge y editor en 5173). Revisa el código automático, los controles de publicación y el diseño móvil sin pulsar Publicar ni escribir en GitHub.
 
-Referencias: [publicación automática con GitHub Actions](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically), [modos de Vite](https://vite.dev/guide/env-and-mode).
-
-Validación local completada: 5 pruebas aprobadas, TypeScript y compilación de producción correctos. Edge verificó borradores aislados, persistencia tras recarga, preparación de corte, importación/restauración, historial, modo de producción solo lectura y diseño móvil. El endpoint rechazó una solicitud con origen externo. Publicación verificada en GitHub Pages: https://danvela27.github.io/cali755/ . Compilación y despliegue aprobados en GitHub Actions; consulta pública verificada con 27 actividades, 8 realizadas, 19 pendientes y CA2 separada.
-
-
-
-## Códigos de actividades
-Las nuevas actividades reciben un código automático: CA carpintería, GE Josué/general, EL electricidad, PG pendientes generales, LI limpieza y HE herrería. Se toma el mayor número ya reservado más uno (CA18 → CA19); los subcódigos existentes se conservan. Cambiar el frente de una actividad existente conserva su código para mantener la referencia histórica.
-Los códigos se comparan sin espacios en extremos y en mayúsculas. Guardar, importar y preparar el corte valida la unicidad global, incluyendo CA2 y snapshots del historial. reserved_codes conserva reservas aunque se restaure un respaldo anterior en el mismo editor. Al cambiar de computadora importa el respaldo más reciente para conservar todas las reservas. No borrar ni editar manualmente este registro. La edición en otra pestaña requiere recargar antes de guardar.
+Referencias: [Git Credential Manager](https://github.com/git-ecosystem/git-credential-manager), [GitHub Pages y Actions](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically).
 
