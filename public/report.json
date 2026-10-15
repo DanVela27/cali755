@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "prepared_at": "2026-10-15T02:51:15.255Z",
+  "prepared_at": "2026-10-15T16:59:41.489Z",
   "tasks": [
     {
       "id": "CA1.1",
@@ -372,9 +372,9 @@
       "contractor": "Limpieza",
       "furniture": "Sin mueble",
       "notes": "",
-      "status": "pending",
+      "status": "done",
       "historical": false,
-      "version": 1
+      "version": 3
     },
     {
       "id": "110a4de3-e2b0-44b3-bf9f-7a7cc8334197",
@@ -397,9 +397,380 @@
       "status": "pending",
       "historical": false,
       "version": 1
+    },
+    {
+      "id": "c6dfde9a-484e-47a3-a221-4617f59648a9",
+      "code": "LI1",
+      "title": "Limpieza Fina",
+      "contractor": "Limpieza",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "6f630659-0ce0-4ddb-b329-f116e0cb2420",
+      "code": "HE1",
+      "title": "Colocación de vidrios",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+      "code": "HE2",
+      "title": "Colocación de marcos",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 2
+    },
+    {
+      "id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+      "code": "HE3",
+      "title": "Colocación de topes superiores (Anillos)",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 2
+    },
+    {
+      "id": "0c638996-08b4-488c-bdd0-f17e788327ce",
+      "code": "HE4",
+      "title": "Colocación de perfil piso 01",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
+    },
+    {
+      "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+      "code": "HE5",
+      "title": "Colocación de perfil piso 02",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 3
+    },
+    {
+      "id": "4aeeb907-e3e6-4230-8a8f-70d1ed8672ba",
+      "code": "HE6",
+      "title": "Pintura y detallado de celosia",
+      "contractor": "Herrero",
+      "furniture": "Sin mueble",
+      "notes": "",
+      "status": "pending",
+      "historical": false,
+      "version": 1
     }
   ],
   "events": [
+    {
+      "id": "dc267511-e745-423a-a871-aabf69988d02",
+      "task_id": "201747df-d4b6-4cde-b17f-741ffb056315",
+      "created_at": "2026-10-15T16:22:25.527Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+        "code": "LG-01",
+        "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      },
+      "after_data": {
+        "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+        "code": "LG-01",
+        "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "done",
+        "historical": false,
+        "version": 3
+      }
+    },
+    {
+      "id": "3968d032-dc19-4cdb-a527-e69eb40c94b5",
+      "task_id": "4aeeb907-e3e6-4230-8a8f-70d1ed8672ba",
+      "created_at": "2026-10-15T16:21:56.567Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "4aeeb907-e3e6-4230-8a8f-70d1ed8672ba",
+        "code": "HE6",
+        "title": "Pintura y detallado de celosia",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "26d5e14e-48d8-40b6-9f8e-8e1fe72c9861",
+      "task_id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+      "created_at": "2026-10-15T16:21:43.951Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+        "code": "HE2",
+        "title": "Colocación de Marcos",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+        "code": "HE2",
+        "title": "Colocación de marcos",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "e70d1d59-fd6c-4fba-a472-f69aea249f11",
+      "task_id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+      "created_at": "2026-10-15T16:21:39.774Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+        "code": "HE3",
+        "title": "Colocación de topes superiores",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+        "code": "HE3",
+        "title": "Colocación de topes superiores (Anillos)",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "80c13817-c2b6-41b4-862e-1aad9cec881b",
+      "task_id": "571635d6-8880-45fd-80f1-c82be855c51a",
+      "created_at": "2026-10-15T16:21:20.264Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+        "code": "HE5",
+        "title": "Colocaciónd de perfil piso 02",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      },
+      "after_data": {
+        "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+        "code": "HE5",
+        "title": "Colocación de perfil piso 02",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 3
+      }
+    },
+    {
+      "id": "7b64a808-58c9-4fe9-a2ad-a388ce122f4d",
+      "task_id": "571635d6-8880-45fd-80f1-c82be855c51a",
+      "created_at": "2026-10-15T16:21:13.634Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+        "code": "HE5",
+        "title": "Colocaciónd de perfil piso 2",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+        "code": "HE5",
+        "title": "Colocaciónd de perfil piso 02",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "17a95037-6544-4e65-aa39-06b9f9a2bb0c",
+      "task_id": "571635d6-8880-45fd-80f1-c82be855c51a",
+      "created_at": "2026-10-15T16:21:08.834Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "571635d6-8880-45fd-80f1-c82be855c51a",
+        "code": "HE5",
+        "title": "Colocaciónd de perfil piso 2",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "baca26d7-906e-4e21-9b80-608e94492180",
+      "task_id": "0c638996-08b4-488c-bdd0-f17e788327ce",
+      "created_at": "2026-10-15T16:20:56.384Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "0c638996-08b4-488c-bdd0-f17e788327ce",
+        "code": "HE4",
+        "title": "Colocación de perfil piso 01",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "6ba2f5ca-6d17-421f-b39f-f22145dc912f",
+      "task_id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+      "created_at": "2026-10-15T16:20:25.662Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "5eabd265-55f5-4bde-86d8-4261101a809a",
+        "code": "HE3",
+        "title": "Colocación de topes superiores",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "2ba260ad-86c3-4457-a860-c4062ff0a339",
+      "task_id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+      "created_at": "2026-10-15T16:20:15.939Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d",
+        "code": "HE2",
+        "title": "Colocación de Marcos",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "7d37728c-9720-4436-b1d0-a0b2aaf8947e",
+      "task_id": "6f630659-0ce0-4ddb-b329-f116e0cb2420",
+      "created_at": "2026-10-15T16:19:53.409Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "6f630659-0ce0-4ddb-b329-f116e0cb2420",
+        "code": "HE1",
+        "title": "Colocación de vidrios",
+        "contractor": "Herrero",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
+    {
+      "id": "a81653df-0a05-4eb1-b9e8-0772253ef739",
+      "task_id": "201747df-d4b6-4cde-b17f-741ffb056315",
+      "created_at": "2026-10-15T16:19:19.851Z",
+      "actor": "Responsable de obra",
+      "before_data": {
+        "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+        "code": "LG-01",
+        "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      },
+      "after_data": {
+        "id": "201747df-d4b6-4cde-b17f-741ffb056315",
+        "code": "LG-01",
+        "title": "Limpieza general de areas de trabajo (15:00 - 19:00)",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 2
+      }
+    },
+    {
+      "id": "9f7c67c8-7778-4a5a-b2e2-915dfc4d95da",
+      "task_id": "c6dfde9a-484e-47a3-a221-4617f59648a9",
+      "created_at": "2026-10-15T16:19:05.099Z",
+      "actor": "Responsable de obra",
+      "before_data": null,
+      "after_data": {
+        "id": "c6dfde9a-484e-47a3-a221-4617f59648a9",
+        "code": "LI1",
+        "title": "Limpieza Fina",
+        "contractor": "Limpieza",
+        "furniture": "Sin mueble",
+        "notes": "",
+        "status": "pending",
+        "historical": false,
+        "version": 1
+      }
+    },
     {
       "id": "7aec8692-ee08-46b4-83bb-12a79a722c66",
       "task_id": "774bf731-c1dc-4305-8a22-3e06b30af088",
@@ -885,6 +1256,34 @@
     {
       "code": "EL-02",
       "task_id": "e2e01db2-36a9-4845-b3e7-85baabd8ad72"
+    },
+    {
+      "code": "LI1",
+      "task_id": "c6dfde9a-484e-47a3-a221-4617f59648a9"
+    },
+    {
+      "code": "HE1",
+      "task_id": "6f630659-0ce0-4ddb-b329-f116e0cb2420"
+    },
+    {
+      "code": "HE2",
+      "task_id": "f0c1fa6d-b40a-46e1-b19e-c84bd43c4e7d"
+    },
+    {
+      "code": "HE3",
+      "task_id": "5eabd265-55f5-4bde-86d8-4261101a809a"
+    },
+    {
+      "code": "HE4",
+      "task_id": "0c638996-08b4-488c-bdd0-f17e788327ce"
+    },
+    {
+      "code": "HE5",
+      "task_id": "571635d6-8880-45fd-80f1-c82be855c51a"
+    },
+    {
+      "code": "HE6",
+      "task_id": "4aeeb907-e3e6-4230-8a8f-70d1ed8672ba"
     }
   ]
 }
