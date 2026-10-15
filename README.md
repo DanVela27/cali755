@@ -1,6 +1,6 @@
 # CALI 755 · Editor local y consulta pública
 
-MVP React + TypeScript + Vite. Una persona documenta; equipo y clientes consultan cortes publicados en GitHub Pages. No usa Supabase, cuentas de clientes ni base de datos. **Aún no está publicado en internet.**
+MVP React + TypeScript + Vite. Una persona documenta; equipo y clientes consultan cortes publicados en GitHub Pages. No usa Supabase, cuentas de clientes ni base de datos. Sitio publicado: [CALI 755](https://danvela27.github.io/cali755/).
 
 ## Uso diario
 
@@ -77,5 +77,6 @@ El script opcional `scripts/browser-check.cjs` requiere Playwright y Edge. Con `
 
 Referencias: [publicación automática con GitHub Actions](https://docs.github.com/en/get-started/start-your-journey/deploying-your-website-automatically), [modos de Vite](https://vite.dev/guide/env-and-mode).
 
-Validación local completada: 5 pruebas aprobadas, TypeScript y compilación de producción correctos. Edge verificó borradores aislados, persistencia tras recarga, preparación de corte, importación/restauración, historial, modo de producción solo lectura y diseño móvil. El endpoint rechazó una solicitud con origen externo. No se ha publicado en una cuenta GitHub real.
+Validación local completada: 5 pruebas aprobadas, TypeScript y compilación de producción correctos. Edge verificó borradores aislados, persistencia tras recarga, preparación de corte, importación/restauración, historial, modo de producción solo lectura y diseño móvil. El endpoint rechazó una solicitud con origen externo. Publicación verificada en GitHub Pages: https://danvela27.github.io/cali755/ . Compilación y despliegue aprobados en GitHub Actions; consulta pública verificada con 27 actividades, 8 realizadas, 19 pendientes y CA2 separada.
+
 
