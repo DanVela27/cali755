@@ -80,3 +80,8 @@ Referencias: [publicación automática con GitHub Actions](https://docs.github.c
 Validación local completada: 5 pruebas aprobadas, TypeScript y compilación de producción correctos. Edge verificó borradores aislados, persistencia tras recarga, preparación de corte, importación/restauración, historial, modo de producción solo lectura y diseño móvil. El endpoint rechazó una solicitud con origen externo. Publicación verificada en GitHub Pages: https://danvela27.github.io/cali755/ . Compilación y despliegue aprobados en GitHub Actions; consulta pública verificada con 27 actividades, 8 realizadas, 19 pendientes y CA2 separada.
 
 
+
+## Códigos de actividades
+Las nuevas actividades reciben un código automático: CA carpintería, GE Josué/general, EL electricidad, PG pendientes generales, LI limpieza y HE herrería. Se toma el mayor número ya reservado más uno (CA18 → CA19); los subcódigos existentes se conservan. Cambiar el frente de una actividad existente conserva su código para mantener la referencia histórica.
+Los códigos se comparan sin espacios en extremos y en mayúsculas. Guardar, importar y preparar el corte valida la unicidad global, incluyendo CA2 y snapshots del historial. reserved_codes conserva reservas aunque se restaure un respaldo anterior en el mismo editor. Al cambiar de computadora importa el respaldo más reciente para conservar todas las reservas. No borrar ni editar manualmente este registro. La edición en otra pestaña requiere recargar antes de guardar.
+
